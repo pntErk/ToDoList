@@ -3,7 +3,6 @@
   width: 100%;
   position: relative;
   align-items: center;
-  
 }
 
 .input__box {
@@ -57,11 +56,23 @@
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
-  background: rgb(185,238,174);
-background: -moz-linear-gradient(90deg, rgba(185,238,174,0.7399334733893557) 0%, rgba(148,217,233,0.6418942577030813) 100%);
-background: -webkit-linear-gradient(90deg, rgba(185,238,174,0.7399334733893557) 0%, rgba(148,217,233,0.6418942577030813) 100%);
-background: linear-gradient(90deg, rgba(185,238,174,0.7399334733893557) 0%, rgba(148,217,233,0.6418942577030813) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endColorstr="#94d9e9",GradientType=1);
+  background: rgb(185, 238, 174);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(185, 238, 174, 0.7399334733893557) 0%,
+    rgba(148, 217, 233, 0.6418942577030813) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(185, 238, 174, 0.7399334733893557) 0%,
+    rgba(148, 217, 233, 0.6418942577030813) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(185, 238, 174, 0.7399334733893557) 0%,
+    rgba(148, 217, 233, 0.6418942577030813) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endColorstr="#94d9e9",GradientType=1);
 }
 
 .todos__single:hover {
@@ -86,10 +97,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endCo
   cursor: pointer;
 }
 
-
 @media (max-width: 1200px) {
   .todos__single {
-    width: 40%
+    width: 40%;
   }
 }
 
@@ -97,11 +107,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endCo
   .input {
     width: 95%;
   }
-  .todos{
+  .todos {
     width: 95%;
   }
   .todos__single {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -116,6 +126,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endCo
   }
 
   .input_submit:hover {
-    background-color: #747bff;
+    background-color: #4f7eaa;
   }
 }
