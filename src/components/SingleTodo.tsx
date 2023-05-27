@@ -3,27 +3,38 @@ import { Todo } from "../model";
 import { AiOutlineEdit } from "react-icons/ai";
 import { HiOutlineTrash } from "react-icons/hi";
 import { MdDoneOutline } from "react-icons/md";
+import TodoList from "./TodoList";
 
 type Props = {
   todo: Todo;
   todos: Todo[];
-  setTodo: React.Dispatch<React.SetStateAction<Todo[]>>;
+  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 };
 
-const SingleTodo = ({ todo, todos, setTodo }: Props) => {
+const SingleTodo = ({ todo, todos, setTodos }: Props) => {
+  const handleDone = (id: number) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, isDone: !todo.isDone } : todo
+      )
+    );
+  };
   return (
     <form className="todos__single">
-      <span className="todos__single--text">{todo.todo}
-      
-      </span>
+      {todo.isDone ? (
+        <s className="todos__single--text">{todo.todo}</s>
+      ) : (
+        <span className="todos__single--text">{todo.todo}</span>
+      )}
+
       <div>
-      <span className="icon">
+        <span className="icon">
           <AiOutlineEdit />
         </span>
         <span className="icon">
           <HiOutlineTrash />
         </span>
-        <span className="icon">
+        <span className="icon" onClick={() => handleDone(todo.id)}>
           <MdDoneOutline />
         </span>
       </div>
