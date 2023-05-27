@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   align-items: center;
+  
 }
 
 .input__box {
@@ -41,6 +42,13 @@
 .input_submit:active {
   transform: scale(0.8);
   box-shadow: 0 0 5px black;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 @media (prefers-color-scheme: light) {
