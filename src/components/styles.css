@@ -136,6 +136,18 @@
   }
 }
 
+.dragactive {
+  background-color: #666666 ;
+}
+
+.dragcomplete {
+  background-color: #00592d ;
+}
+
+.drag {
+  box-shadow: 0 0 10px black;
+}
+
 @media (prefers-color-scheme: light) {
   .input__box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -154,6 +166,18 @@
   }
   .remove {
     background-color: #01b7a5;
+  }
+
+  .dragactive {
+    background-color: #fff280;
+  }
+  
+  .dragcomplete {
+    background-color: #0afee6 ;
+  }
+  
+  .drag {
+    box-shadow: 0 0 10px black;
   }
 }
 
