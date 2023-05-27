@@ -35,6 +35,13 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(185, 238, 174, 0.7399334733893557) 0%,
+    rgba(148, 217, 233, 0.6418942577030813) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -48,7 +55,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
 
 button:focus,
 button:focus-visible {

@@ -51,6 +51,60 @@
   flex-wrap: wrap;
 }
 
+.todos__single {
+  display: flex;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background: rgb(185,238,174);
+background: -moz-linear-gradient(90deg, rgba(185,238,174,0.7399334733893557) 0%, rgba(148,217,233,0.6418942577030813) 100%);
+background: -webkit-linear-gradient(90deg, rgba(185,238,174,0.7399334733893557) 0%, rgba(148,217,233,0.6418942577030813) 100%);
+background: linear-gradient(90deg, rgba(185,238,174,0.7399334733893557) 0%, rgba(148,217,233,0.6418942577030813) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endColorstr="#94d9e9",GradientType=1);
+}
+
+.todos__single:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
+}
+
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.todos__single--text:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+  .todos__single {
+    width: 40%
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todos{
+    width: 95%;
+  }
+  .todos__single {
+    width: 100%
+  }
+}
+
 @media (prefers-color-scheme: light) {
   .input__box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
