@@ -11,7 +11,6 @@ type Props = {
 };
 
 const SingleTodo = ({ todo, todos, setTodos }: Props) => {
-
   const handleDone = (id: number) => {
     setTodos(
       todos.map((todo) =>
@@ -40,14 +39,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
       } */}
 
       <div>
-        <span
-          className="icon"
-          onClick={() => {
-            if (!edit && !todo.isDone) {
-              setEdit(!edit);
-            }
-          }}
-        >
+        <span className="icon">
           <AiOutlineEdit />
         </span>
         <span className="icon" onClick={() => handleDelete(todo.id)}>
