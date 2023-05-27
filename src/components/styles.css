@@ -43,16 +43,34 @@
   box-shadow: 0 0 5px black;
 }
 
+.container {
+  display: flex;
+  width: 98.5%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .todos {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  flex-wrap: wrap;
+  width: 47%;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #3b3b3b ;
+}
+
+.remove {
+  background-color: #008040 ;
+}
+
+.todos__heding {
+  font-size: 30px;
 }
 
 .todos__single {
   display: flex;
-  width: 29.5%;
+
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
@@ -73,6 +91,7 @@
     rgba(148, 217, 233, 0.6418942577030813) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9eeae",endColorstr="#94d9e9",GradientType=1);
+  transition: 0.2s;
 }
 
 .todos__single:hover {
@@ -97,9 +116,9 @@
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
-  .todos__single {
-    width: 40%;
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
   }
 }
 
@@ -109,9 +128,11 @@
   }
   .todos {
     width: 95%;
+    margin-bottom: 10px;
   }
-  .todos__single {
-    width: 100%;
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
 }
 
@@ -128,4 +149,11 @@
   .input_submit:hover {
     background-color: #4f7eaa;
   }
+  .todos{
+    background-color: #fff8b8;
+  }
+  .remove {
+    background-color: #01b7a5;
+  }
 }
+
